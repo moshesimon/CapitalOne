@@ -1,5 +1,6 @@
 public class BuildSpicyTuna implements BuildSushi{
-    protected Sushi sushi;
+    
+    private Sushi sushi;
 
     public void createNewSushi(){
         sushi = new Sushi();
