@@ -2,6 +2,7 @@ import java.util.*;
 
 public class SushiTest {
 
+    
     public void printMenu(){
         System.out.println("Which Sushi would you like?");
         System.out.println("1) Spicy Tuna");
