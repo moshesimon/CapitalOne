@@ -1,28 +1,12 @@
-public class BuildSpicyTuna implements BuildSushi{// Inheritance (is-a)
-    
-    private Sushi sushi;// Data Encapsulation
+public class BuildSpicyTuna extends BuildTuna {// Inheritance (is-a)
 
-    public void createNewSushi(){
-        sushi = new Sushi();
-    }
-
-    public Sushi getSushi(){
-        return sushi;
-    }
-
+    @Override
     public void buildName(){
-        sushi.setName("Spicy Tuna");
+        getSushi().setName("Spicy Tuna");
     }
 
-    public void buildFish(){
-        sushi.setFish("Tuna");
-    }
-
-    public void buildVeg(){
-        sushi.setVeg("Cucumber");
-    }
-
+    @Override
     public void buildSauce(){
-        sushi.setSauce("Spicy + Soy");
+        getSushi().setSauce("Spicy + Soy");
     }
 }
