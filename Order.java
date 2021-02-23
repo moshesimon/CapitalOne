@@ -1,5 +1,6 @@
-public class Order {
-    BuildSushi buildSushi;
+public class Order {// Class
+   
+    private BuildSushi buildSushi;// Composition (has-a)
     
     public void setSushiBuilder(BuildSushi typeOfSush){
         buildSushi = typeOfSush;
@@ -13,7 +14,7 @@ public class Order {
         buildSushi.buildSauce();
     }
     
-    public Sushi getSushi(){
+    public Sushi getSushi(){// Encapsulation
         return buildSushi.getSushi();
     }
 }
