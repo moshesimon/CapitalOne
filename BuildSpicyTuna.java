@@ -1,6 +1,6 @@
-public class BuildSpicyTuna implements BuildSushi{
+public class BuildSpicyTuna implements BuildSushi{// Inheritance (is-a)
     
-    private Sushi sushi;
+    private Sushi sushi;// Data Encapsulation
 
     public void createNewSushi(){
         sushi = new Sushi();
