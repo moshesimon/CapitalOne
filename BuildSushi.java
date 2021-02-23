@@ -1,4 +1,4 @@
-public interface BuildSushi {
+public interface BuildSushi {// Abstraction
 
     public void createNewSushi();
 
@@ -9,6 +9,6 @@ public interface BuildSushi {
     public void buildFish();
 
     public void buildVeg();
-    
+
     public void buildSauce();
 }
