@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SushiTest {
+public class SushiTest {// Test Class
 
     public void printMenu(){
         System.out.println("Which Sushi would you like?");
@@ -39,27 +39,26 @@ public class SushiTest {
     }
 
     public static void main(String[] args){
-        SushiTest sm = new SushiTest();
+        SushiTest sushiTest = new SushiTest();// SushiTest Object
         Scanner input = new Scanner(System.in);
-        Order order = new Order();
+        Order order = new Order();// Order Object
 
-        int option = sm.options(input);
+        int option = sushiTest.options(input);
         if(option == 1){
-            BuildSushi buildSpicSushi = new BuildSpicyTuna();
-            order.setSushiBuilder(buildSpicSushi);
+            BuildSushi buildSpicySushi = new BuildSpicyTuna();// Polymorphism
+            order.setSushiBuilder(buildSpicySushi);
         }
         else if(option == 2){
-            BuildSushi buildCalSushi = new BuildCaliforniaRoll();
+            BuildSushi buildCalSushi = new BuildCaliforniaRoll();// Polymorphism
             order.setSushiBuilder(buildCalSushi);
         }
         else if(option == 3){
-            BuildSushi buildPhilSushi = new BuildPhiladelphiaRoll();
+            BuildSushi buildPhilSushi = new BuildPhiladelphiaRoll();// Polymorphism
             order.setSushiBuilder(buildPhilSushi);
         }
 
         order.constructSushi();
-
         Sushi sushi = order.getSushi();
-        sm.printSushi(sushi);
+        sushiTest.printSushi(sushi);
     }
 }
