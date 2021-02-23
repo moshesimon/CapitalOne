@@ -1,6 +1,6 @@
-class BuildPhiladelphiaRoll implements BuildSushi{
+class BuildPhiladelphiaRoll implements BuildSushi{// Inheritance (is-a)
 
-    private Sushi sushi;
+    private Sushi sushi;// Data Encapsulation
 
     public void createNewSushi(){
         sushi = new Sushi();
