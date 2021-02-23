@@ -1,5 +1,6 @@
-public class Sushi {
+public class Sushi {// Class
 
+    // Data Encapsulation
     private String Name = new String();
     private String Fish = new String();
     private String Veg = new String();
